@@ -8,5 +8,5 @@ aws ec2 describe-instances --query "Reservations[*].Instances[*].InstanceId" --o
 aws ec2 describe-instances \
   --filters Name=instance-state-name,Values=running \
   --output table
-aws ec2 describe-instances --query "Reservations[*].Instances[*].[InstanceId,State.Name,PublicIpAddress,InstanceType]" --output table
+aws ec2 describe-instances --query "Reservations[*].Instances[*].[InstanceId, State.Name, PublicIpAddress, InstanceType]" --output table
 aws ec2 terminate-instances --instance-ids i-0123456789abcdef0
