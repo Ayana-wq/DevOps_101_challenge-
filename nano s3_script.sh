@@ -38,4 +38,4 @@ aws s3api delete-bucket \
   --bucket $BUCKET_NAME \
   --region $REGION
 
-echo "✅ Workflow complete!"
+echo " Workflow complete!"
