@@ -6,7 +6,7 @@
 # ----------------------------
 # Make this file executable:
 #   sudo chmod +x metrics.sh
-# ----------------------------
+# ----------------------------------
 
 # === Step 1. Get IMDSv2 Token (valid for 60 seconds)
 TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" \
