@@ -9,8 +9,7 @@ def wait_until_instance_stopped(ec2_client, instance_id):
         # Handle the exception if the instance fails to stop within the specified timeout
         print(f"Error waiting for instance to stop: {e}")
 
-def lambda_handler(event, context):
-    # Retrieve the instance ID from the event parameter
+def lambda_handler(event, context):    # Retrieve the instance ID from the event parameter
     instance_id = event['instanceId']
     
     # Create an EC2 client
